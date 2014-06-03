@@ -5,10 +5,19 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
 
+git rev-parse HEAD
+
+cd $LP_DIR
+
+git rev-parse HEAD
+
+
 # using undocumented directory
 cd $GIT_DIR
 
 ls -al
+
+cat ./HEAD
 
 echo "=====> getting commit hash"
 COMMIT_HASH=$(git rev-parse HEAD)
