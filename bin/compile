@@ -8,8 +8,13 @@ LP_DIR=`cd $(dirname $0); cd ..; pwd`
 # using undocumented directory
 cd $GIT_DIR
 
+ls -al
+
 echo "=====> getting commit hash"
 COMMIT_HASH=$(git rev-parse HEAD)
 
+
+
 echo "=====> Saving $COMMIT_HASH to env"
+mkdir -p $BUILD_DIR/.profile.d
 echo "export COMMIT_HASH=\"\$COMMIT_HASH\"" > $BUILD_DIR/.profile.d/commit_hash.sh
