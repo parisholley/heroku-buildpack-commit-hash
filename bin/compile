@@ -5,6 +5,12 @@ set -e
 BUILD_DIR=$1
 CACHE_DIR=$2
 
+echo $GIT_DIR
+pwd
+
+ls -la $GIT_DIR
+
+
 echo "=====> getting commit hash"
 COMMIT_HASH=$(git rev-parse HEAD)
 
