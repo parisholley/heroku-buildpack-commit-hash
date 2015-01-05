@@ -8,8 +8,12 @@ CACHE_DIR=$2
 echo $GIT_DIR
 pwd
 
+ls -la /tmp
 ls -la $GIT_DIR
 
+cat REAMDE.md
+
+exit 1
 
 echo "=====> getting commit hash"
 COMMIT_HASH=$(git rev-parse HEAD)
