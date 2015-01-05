@@ -6,9 +6,9 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
 
-ls $BUILD_DIR
+ls -la $GIT_DIR
 
-cd $BUILD_DIR
+cd $GIT_DIR
 
 git rev-parse HEAD
 
