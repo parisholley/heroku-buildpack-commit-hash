@@ -6,7 +6,9 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
 
+ls -la
 ls -la $GIT_DIR
+ls -la $BUILD_DIR
 
 cd $GIT_DIR
 
