@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
+set -e
 
 BUILD_DIR=$1
 CACHE_DIR=$2
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
 
-ls /
-
-env
+ls $BUILD_DIR
 
 cd $BUILD_DIR
 
