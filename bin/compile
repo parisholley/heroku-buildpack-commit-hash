@@ -5,13 +5,7 @@ set -e
 BUILD_DIR=$1
 CACHE_DIR=$2
 
-echo $GIT_DIR
-pwd
-
-ls -la /tmp
-ls -la $GIT_DIR
-
-cat REAMDE.md
+ls -la $BUILD_DIR
 
 exit 1
 
