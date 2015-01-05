@@ -4,30 +4,9 @@ set -e
 
 BUILD_DIR=$1
 CACHE_DIR=$2
-LP_DIR=`cd $(dirname $0); cd ..; pwd`
-
-git rev-parse HEAD
-
-ls -la
-ls -la $GIT_DIR
-ls -la $BUILD_DIR
-
-cd $GIT_DIR
-
-git rev-parse HEAD
-
-
-# using undocumented directory
-cd $GIT_DIR
-
-ls -al
-
-cat ./HEAD
 
 echo "=====> getting commit hash"
 COMMIT_HASH=$(git rev-parse HEAD)
-
-
 
 echo "=====> Saving $COMMIT_HASH to env"
 mkdir -p $BUILD_DIR/.profile.d
